@@ -39,8 +39,7 @@ def checkAnswer(answerToQuestion):
         print("[[Unexpected Input Error]]")
 
 categoryResponse = 0
-
-while categoryResponse >=0 and categoryResponse <=5 and categoryResponse !=6:
+while categoryResponse >=0 and categoryResponse <=5:
     print("\nSelect one of the following options:")
     printCategories()
 
@@ -50,20 +49,36 @@ while categoryResponse >=0 and categoryResponse <=5 and categoryResponse !=6:
     except:
         categoryResponse = 0
 
+    # NBA Category
     if(categoryResponse == 1):
         print("\nWhat NBA player had the highest AVG PPG:")
         printNBA()
 
         checkAnswer(1)
 
+    # Movies Category
     elif(categoryResponse == 2):
-        print("\n[Triva Question for Movies]")
+        print("In the Matrix, does Neo take the blue pill or the red pill?: ")
+        printMovie()
+
+        checkAnswer(1)
+
+    # Movies Category
     elif(categoryResponse == 3):
-        print("\n[Politics Question for Movies]")
+        print('Who ran for President of the United States with the campaign slogan "A chicken in every pot and a car in every garage?"')
+        printPolitics()
+
+        checkAnswer(3)
+
+    # Overwatch Category
     elif(categoryResponse == 4):
-        print("\n[Overwatch Question for Movies]")
+        print("\n[Trivia Question for Overwatch]")
+
+    # Random Category
     elif(categoryResponse == 5):
-        print("\n[Random Question for Movies]")
+        print("\n[Trivia Question for Random]")
+
+    # Program Exit
     elif(categoryResponse == 6):
         print("\nThanks for Playing. Goodbye.")
     else:
