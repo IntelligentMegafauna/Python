@@ -39,7 +39,7 @@ def checkAnswer(answerToQuestion):
         print("[[Unexpected Input Error]]")
 
 categoryResponse = 0
-while categoryResponse >=0 and categoryResponse <=5:
+while categoryResponse >= 0 and categoryResponse <= 5:
     print("\nSelect one of the following options:")
     printCategories()
 
@@ -65,7 +65,7 @@ while categoryResponse >=0 and categoryResponse <=5:
 
     # Movies Category
     elif(categoryResponse == 3):
-        print('Who ran for President of the United States with the campaign slogan "A chicken in every pot and a car in every garage?"')
+        print("Who ran for President of the United States with the campaign slogan 'A chicken in every pot and a car in every garage?'")
         printPolitics()
 
         checkAnswer(3)
